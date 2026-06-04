@@ -27,8 +27,8 @@ function ProjectsPage() {
           <span className="italic text-muted-foreground">2023 — 2025.</span>
         </h1>
         <p className="mt-10 max-w-2xl text-base text-muted-foreground md:text-lg">
-          A short, opinionated list of products spanning onchain social, DeFi, creator
-          economy, education, gaming, and mobile finance.
+          A short, opinionated list of products spanning onchain social, DeFi, creator economy,
+          education, gaming, and mobile finance.
         </p>
       </section>
 

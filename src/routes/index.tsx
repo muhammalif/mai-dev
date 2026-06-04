@@ -32,9 +32,7 @@ function Index() {
 
         <h1 className="reveal mt-10 font-serif text-[clamp(2.75rem,9vw,9.5rem)] leading-[0.92] tracking-tight">
           {profile.role}
-          <span className="block text-muted-foreground italic">
-            ({profile.scope})
-          </span>
+          <span className="block text-muted-foreground italic">({profile.scope})</span>
         </h1>
 
         <div className="mt-14 grid gap-10 md:grid-cols-12">
@@ -48,7 +46,9 @@ function Index() {
                 className="group inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3 text-sm text-background transition-transform hover:-translate-y-0.5"
               >
                 View selected work
-                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
               </Link>
               <Link
                 to="/contact"
@@ -77,7 +77,10 @@ function Index() {
               </>
             }
           />
-          <Link to="/projects" className="font-mono text-xs uppercase tracking-[0.22em] link-underline self-start md:self-end">
+          <Link
+            to="/projects"
+            className="font-mono text-xs uppercase tracking-[0.22em] link-underline self-start md:self-end"
+          >
             All projects →
           </Link>
         </div>

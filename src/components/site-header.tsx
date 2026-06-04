@@ -4,7 +4,7 @@ import { ThemeToggle } from "./theme-toggle";
 import { profile } from "@/lib/portfolio-data";
 
 const links = [
-  { to: "/", label: "Index" },
+  { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/projects", label: "Projects" },
   { to: "/experience", label: "Experience" },
@@ -39,14 +39,10 @@ export function SiteHeader() {
     >
       <div className="container-page flex h-16 items-center justify-between md:h-20">
         <Link to="/" className="flex items-center gap-3 group">
-          <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background font-serif text-lg leading-none">
-            a
-          </span>
+          <img src="/mai-logo.png" alt="MAI Logo" className="h-8 w-8 rounded-full object-contain" />
           <span className="hidden sm:flex flex-col leading-tight">
             <span className="text-[13px] font-medium">{profile.name}</span>
-            <span className="text-[11px] text-muted-foreground font-mono">
-              {profile.role}
-            </span>
+            <span className="text-[11px] text-muted-foreground font-mono">{profile.role}</span>
           </span>
         </Link>
 

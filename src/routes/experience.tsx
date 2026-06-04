@@ -5,9 +5,15 @@ export const Route = createFileRoute("/experience")({
   head: () => ({
     meta: [
       { title: "Experience — Muhammad Alif Islam" },
-      { name: "description", content: "Independent fullstack development across Web2, Web3, and mobile since 2022." },
+      {
+        name: "description",
+        content: "Independent fullstack development across Web2, Web3, and mobile since 2022.",
+      },
       { property: "og:title", content: "Experience — Muhammad Alif Islam" },
-      { property: "og:description", content: "Independent fullstack development across Web2, Web3, and mobile since 2022." },
+      {
+        property: "og:description",
+        content: "Independent fullstack development across Web2, Web3, and mobile since 2022.",
+      },
     ],
   }),
   component: ExperiencePage,
@@ -44,15 +50,14 @@ function ExperiencePage() {
               <p className="text-foreground text-[13px]">{e.location}</p>
             </aside>
             <div className="md:col-span-8">
-              <h2 className="font-serif text-4xl md:text-5xl leading-tight">
-                {e.title}
-              </h2>
-              <p className="mt-3 font-mono text-sm text-muted-foreground">
-                {e.company}
-              </p>
+              <h2 className="font-serif text-4xl md:text-5xl leading-tight">{e.title}</h2>
+              <p className="mt-3 font-mono text-sm text-muted-foreground">{e.company}</p>
               <ul className="mt-10 space-y-5">
                 {e.bullets.map((b, i) => (
-                  <li key={b} className="flex gap-5 border-b border-border pb-5 text-base md:text-lg leading-relaxed">
+                  <li
+                    key={b}
+                    className="flex gap-5 border-b border-border pb-5 text-base md:text-lg leading-relaxed"
+                  >
                     <span className="font-mono text-[11px] text-muted-foreground pt-2">
                       {String(i + 1).padStart(2, "0")}
                     </span>

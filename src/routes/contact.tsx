@@ -15,9 +15,13 @@ export const Route = createFileRoute("/contact")({
 
 const channels = [
   { label: "Email", value: profile.email, href: `mailto:${profile.email}` },
-  { label: "GitHub", value: "github.com/alifislam", href: "https://github.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/alifislam", href: "https://linkedin.com" },
-  { label: "X", value: "@alifislam", href: "https://x.com" },
+  { label: "GitHub", value: "github.com/muhammalif", href: "https://github.com/muhammalif" },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/muhammad-alif-islam",
+    href: "https://www.linkedin.com/in/muhammad-alif-islam/",
+  },
+  { label: "X", value: "@_emptyman", href: "https://x.com/_emptyman" },
 ];
 
 function ContactPage() {
@@ -35,12 +39,12 @@ function ContactPage() {
       <div className="mt-16 grid gap-16 md:grid-cols-12">
         <div className="md:col-span-6 space-y-6 text-lg leading-relaxed text-foreground/85 md:text-xl">
           <p>
-            I take on a small number of engagements each year — fullstack builds,
-            Web3 product work, and mobile apps where craft and engineering matter.
+            I take on a small number of engagements each year — fullstack builds, Web3 product work,
+            and mobile apps where craft and engineering matter.
           </p>
           <p>
-            Send a note with what you're building, the rough scope, and your
-            timeline. I'll respond within two business days.
+            Send a note with what you're building, the rough scope, and your timeline. I'll respond
+            within two business days.
           </p>
           <a
             href={`mailto:${profile.email}`}
@@ -68,7 +72,10 @@ function ContactPage() {
                     {c.label}
                   </span>
                   <span className="font-serif text-xl md:text-2xl group-hover:italic transition-all">
-                    {c.value} <span className="inline-block transition-transform group-hover:translate-x-1">↗</span>
+                    {c.value}{" "}
+                    <span className="inline-block transition-transform group-hover:translate-x-1">
+                      ↗
+                    </span>
                   </span>
                 </a>
               </li>
